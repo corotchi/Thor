@@ -1,13 +1,17 @@
 Ext.application({
 
+
+
     name: 'Q4App',
 
     requires: [
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    // profiles: ["Phone", "Tablet"],
+    views: ['Main', 'Home', 'Stream'],
     models: ['Blogs'],
+    controllers: ['Home'],
     stores: ['Blogs'],
 
     icon: {

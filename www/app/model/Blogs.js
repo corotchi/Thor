@@ -5,6 +5,8 @@ Ext.define('Q4App.model.Blogs', {
         fields: [
             'Body',
             'Headline',
+            'Body',
+            'PressReleaseId',
             'PressReleaseDate'
         ],
 
@@ -15,7 +17,7 @@ Ext.define('Q4App.model.Blogs', {
             idProperty:'blogModel',
             extraParams:{
                 apiKey: Q4App.app.siteSettings.apiKey,
-                pageSize: 40,
+                pageSize: 5,
                 pressReleaseDateFilter: 3,
                 bodyType: 2
             },
